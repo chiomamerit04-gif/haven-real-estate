@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven — Find Your Perfect Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <header id="header"></header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-label">FIND YOUR PLACE</p>
+                <h1>
+                    Find a place
+                    <span>you'll love</span>
+                    to call home.
+                </h1>
+                <p class="hero-text">
+                    Discover beautiful homes and properties in your
+                    favourite locations with trusted real estate agents.
+                </p>
+                <a href="properties.html" class="hero-btn">
+                    Explore Properties
+                </a>
+            </div>
+        </section>
+
+        <section class="property-search">
+            <div class="search-header">
+                <h2>Find your perfect property</h2>
+                <p>Search through our available properties.</p>
+            </div>
+            <form class="search-form">
+                <div class="search-field">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="e.g. Lekki, Lagos">
+                </div>
+                <div class="search-field">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type">
+                        <option value="">Any Property</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="duplex">Duplex</option>
+                        <option value="land">Land</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label for="price">Price Range</label>
+                    <select id="price">
+                        <option value="">Any Price</option>
+                        <option value="under-50m">Under ₦50M</option>
+                        <option value="50m-100m">₦50M - ₦100M</option>
+                        <option value="100m-200m">₦100M - ₦200M</option>
+                        <option value="over-200m">₦200M+</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-btn">
+                    Search
+                </button>
+                <button type="button" class="clear-search">
+                    Clear
+                </button>
+            </form>
+        </section>
+
+        <section class="featured-properties">
+            <div class="section-heading">
+                <div>
+                    <p>EXPLORE</p>
+                    <h2>Featured Properties</h2>
+                </div>
+                <a href="properties.html">View All Properties →</a>
+            </div>
+            <div class="property-grid">
+                <article class="property-card" data-location="lekki, lagos" data-type="duplex" data-price="85000000">
+                    <div class="property-image">
+                        <img src="images/property1.png" alt="Modern luxury house">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Lekki, Lagos</p>
+                        <h3>Modern Luxury Duplex</h3>
+                        <p class="property-price">₦85,000,000</p>
+                        <div class="property-details">
+                            <span>4 Beds</span>
+                            <span>4 Baths</span>
+                            <span>450 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-location="ikoyi, lagos" data-type="apartment" data-price="12000000">
+                    <div class="property-image">
+                        <img src="images/property2.png" alt="Luxury apartment">
+                        <span class="property-status">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Ikoyi, Lagos</p>
+
+                        <h3>Luxury City Apartment</h3>
+
+                        <p class="property-price">₦12,000,000/year</p>
+
+                        <div class="property-details">
+                            <span>3 Beds</span>
+                            <span>3 Baths</span>
+                            <span>280 m²</span>
+                        </div>
+                    </div>
+
+                </article>
+                <article class="property-card" data-location="abuja" data-type="house" data-price="120000000">
+                    <div class="property-image">
+                        <img src="images/property3.png" alt="Contemporary family home">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Abuja, Nigeria</p>
+                        <h3>Contemporary Family Home</h3>
+                        <p class="property-price">₦120,000,000</p>
+                        <div class="property-details">
+                            <span>5 Beds</span>
+                            <span>5 Baths</span>
+                            <span>600 m²</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <p class="no-results">No properties found. Try adjusting your search.</p>
+        </section>
+        <section class="why-us">
+            <div class="section-heading">
+                <p>WHY HAVEN</p>
+                <h2>Everything you need to find your next home.</h2>
+            </div>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Verified Properties</h3>
+                    <p>
+                        Browse genuine properties verified by our team
+                        before they are listed.
+                    </p>
+                </div>
+                <div class="benefit">
+                    <h3>Trusted Agents</h3>
+                    <p>
+                        Connect with experienced agents who understand
+                        the market and your needs.
+                    </p>
+                </div>
+                <div class="benefit">
+                    <h3>Easy Search</h3>
+                    <p>
+                        Find properties quickly using our simple
+                        search and filtering tools.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="locations">
+            <div class="section-heading">
+                <p>EXPLORE LOCATIONS</p>
+                <h2>Popular Locations</h2>
+            </div>
+            <div class="location-grid">
+                <div class="location-card">
+                    <h3>Lagos</h3>
+                    <p>120+ Properties</p>
+                </div>
+                <div class="location-card">
+                    <h3>Abuja</h3>
+                    <p>80+ Properties</p>
+                </div>
+                <div class="location-card">
+                    <h3>Port Harcourt</h3>
+                    <p>50+ Properties</p>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Your next home is closer than you think.</h2>
+            <p>
+                Explore our properties and find a place
+                that feels like home.
+            </p>
+            <a href="properties.html">Browse Properties</a>
+        </section>
+    </main>
+       <header id="footer"></header>
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

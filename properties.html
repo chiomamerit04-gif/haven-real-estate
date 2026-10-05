@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/properties.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <p>EXPLORE OUR LISTINGS</p>
+                <h1>Find Your Perfect Property</h1>
+                <p>Discover carefully selected homes, apartments, duplexes and land in some of Nigeria's most desirable locations.</p>
+            </div>
+        </section>
+        <section class="property-search properties-search">
+            <div class="search-header">
+                <p>SEARCH</p>
+                <h2>Find a Property</h2>
+            </div>
+            <form class="search-form">
+                <div class="search-field">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="e.g. Lekki, Lagos">
+                </div>
+                <div class="search-field">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type">
+                        <option value="">Any Property</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="duplex">Duplex</option>
+                        <option value="land">Land</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label for="price">Price Range</label>
+                    <select id="price">
+                        <option value="">Any Price</option>
+                        <option value="under-50m">Under ₦50M</option>
+                        <option value="50m-100m">₦50M - ₦100M</option>
+                        <option value="100m-200m">₦100M - ₦200M</option>
+                        <option value="over-200m">₦200M+</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </section>
+        <section class="properties-section">
+            <div class="section-heading">
+                <div>
+                    <p>OUR LISTINGS</p>
+                    <h2>Available Properties</h2>
+                </div>
+                <p class="property-count">15 Properties</p>
+            </div>
+            <div class="properties-grid">
+                <article class="property-card" data-id="1" data-location="lekki, lagos" data-type="duplex" data-price="85000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property1.png" alt="Modern luxury duplex in Lekki">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Lekki, Lagos</p>
+                        <h3>Modern Luxury Duplex</h3>
+                        <p class="property-price">₦85,000,000</p>
+                        <div class="property-details">
+                            <span>4 Beds</span>
+                            <span>4 Baths</span>
+                            <span>450 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="2"data-location="ikoyi, lagos" data-type="apartment" data-price="12000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property2.png" alt="Luxury city apartment in Ikoyi">
+                        <span class="property-status">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Ikoyi, Lagos</p>
+                        <h3>Luxury City Apartment</h3>
+                        <p class="property-price">₦12,000,000/year</p>
+                        <div class="property-details">
+                            <span>3 Beds</span>
+                            <span>3 Baths</span>
+                            <span>280 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="3" data-location="abuja" data-type="house" data-price="120000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property3.png" alt="Contemporary family home in Abuja">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Abuja, Nigeria</p>
+                        <h3>Contemporary Family Home</h3>
+                        <p class="property-price">₦120,000,000</p>
+                        <div class="property-details">
+                            <span>5 Beds</span>
+                            <span>5 Baths</span>
+                            <span>600 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="4" data-location="victoria island, lagos" data-type="apartment" data-price="18000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property4.png" alt="Executive waterfront apartment in Victoria Island">
+                        <span class="property-status">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Victoria Island, Lagos</p>
+                        <h3>Executive Waterfront Apartment</h3>
+                        <p class="property-price">₦18,000,000/year</p>
+                        <div class="property-details">
+                            <span>3 Beds</span>
+                            <span>3 Baths</span>
+                            <span>320 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card"data-id="5" data-location="ikeja, lagos" data-type="house" data-price="65000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property5.png" alt="Spacious family residence in Ikeja">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Ikeja, Lagos</p>
+                        <h3>Spacious Family Residence</h3>
+                        <p class="property-price">₦65,000,000</p>
+                        <div class="property-details">
+                            <span>4 Beds</span>
+                            <span>4 Baths</span>
+                            <span>500 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="6"data-location="wuse, abuja" data-type="apartment" data-price="9500000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property6.png" alt="Modern city apartment in Wuse">
+                        <span class="property-status">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Wuse, Abuja</p>
+                        <h3>Modern City Apartment</h3>
+                        <p class="property-price">₦9,500,000/year</p>
+                        <div class="property-details">
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>210 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="7"data-location="ajah, lagos" data-type="duplex" data-price="72000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property7.png" alt="Contemporary family duplex in Ajah">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Ajah, Lagos</p>
+                        <h3>Contemporary Family Duplex</h3>
+                        <p class="property-price">₦72,000,000</p>
+                        <div class="property-details">
+                            <span>4 Beds</span>
+                            <span>5 Baths</span>
+                            <span>420 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="8"data-location="gwarinpa, abuja" data-type="house" data-price="58000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property8.png" alt="Elegant detached home in Gwarinpa">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Gwarinpa, Abuja</p>
+                        <h3>Elegant Detached Home</h3>
+                        <p class="property-price">₦58,000,000</p>
+                        <div class="property-details">
+                            <span>4 Beds</span>
+                            <span>4 Baths</span>
+                            <span>480 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="9"data-location="port harcourt" data-type="duplex" data-price="95000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property9.png" alt="Luxury garden duplex in Port Harcourt">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Port Harcourt, Rivers</p>
+                        <h3>Luxury Garden Duplex</h3>
+                        <p class="property-price">₦95,000,000</p>
+                        <div class="property-details">
+                            <span>5 Beds</span>
+                            <span>5 Baths</span>
+                            <span>550 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="10"data-location="yaba, lagos" data-type="apartment" data-price="6500000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property10.png" alt="Modern urban apartment in Yaba">
+                        <span class="property-status">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Yaba, Lagos</p>
+                        <h3>Modern Urban Apartment</h3>
+                        <p class="property-price">₦6,500,000/year</p>
+                        <div class="property-details">
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>160 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="11"data-location="osapa, lagos" data-type="duplex" data-price="110000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property11.png" alt="Premium contemporary duplex in Osapa">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Osapa, Lagos</p>
+                        <h3>Premium Contemporary Duplex</h3>
+                        <p class="property-price">₦110,000,000</p>
+                        <div class="property-details">
+                            <span>5 Beds</span>
+                            <span>5 Baths</span>
+                            <span>600 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card"data-id="12" data-location="maitama, abuja" data-type="house" data-price="185000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property12.png" alt="Luxury executive residence in Maitama">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Maitama, Abuja</p>
+                        <h3>Luxury Executive Residence</h3>
+                        <p class="property-price">₦185,000,000</p>
+                        <div class="property-details">
+                            <span>6 Beds</span>
+                            <span>6 Baths</span>
+                            <span>720 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card"data-id="13"data-location="lekki, lagos" data-type="land" data-price="45000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property13.png" alt="Residential land plot in Lekki">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Lekki, Lagos</p>
+                        <h3>Residential Land Plot</h3>
+                        <p class="property-price">₦45,000,000</p>
+                        <div class="property-details">
+                            <span>600 m²</span>
+                            <span>Residential</span>
+                            <span>Dry Land</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="14"data-location="rumuola, port harcourt" data-type="house" data-price="75000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property14.png" alt="Spacious family home in Rumuola">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Rumuola, Port Harcourt</p>
+                        <h3>Spacious Family Home</h3>
+                        <p class="property-price">₦75,000,000</p>
+                        <div class="property-details">
+                            <span>4 Beds</span>
+                            <span>4 Baths</span>
+                            <span>520 m²</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card" data-id="15"data-location="banana island, lagos" data-type="apartment" data-price="220000000">
+                    <button class="favorite-btn">♡</button>
+                    <div class="property-image">
+                        <img src="images/property15.png" alt="Premium island residence in Banana Island">
+                        <span class="property-status">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">Banana Island, Lagos</p>
+                        <h3>Premium Island Residence</h3>
+                        <p class="property-price">₦220,000,000</p>
+                        <div class="property-details">
+                            <span>4 Beds</span>
+                            <span>5 Baths</span>
+                            <span>480 m²</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <p class="no-results">No properties found. Try adjusting your search.</p>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+    <script src="js/script.js"></script>
+    <script src="js/properties.js"></script>
+</body>
+</html>

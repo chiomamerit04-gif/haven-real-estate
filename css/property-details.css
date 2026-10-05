@@ -1,0 +1,177 @@
+.property-details-hero {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 5% 0;
+}
+.property-details-image {
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+.property-details-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.property-details-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 5% 6rem;
+}
+.property-details-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+.property-details-main .property-location {
+    margin-bottom: 0.75rem;
+}
+.property-details-main h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.property-details-price {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.property-details-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.property-details-list span {
+    background-color: var(--light-green);
+    color: var(--primary-color);
+    padding: 0.7rem 1rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+}
+.property-description {
+    padding-top: 3rem;
+}
+.details-label {
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    margin-bottom: 0.75rem;
+}
+.property-description h2,
+.property-features h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.property-description p:not(.details-label) {
+    color: var(--muted-text);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+.property-features {
+    padding-top: 2rem;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.features-grid span {
+    color: var(--text-color);
+    padding: 0.8rem 0;
+}
+.property-agent-card {
+    background-color: var(--light-green);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-light);
+}
+.property-agent-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+.property-agent-card > p:not(.details-label) {
+    color: var(--muted-text);
+    margin-bottom: 2rem;
+}
+.details-btn {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.9rem 1.2rem;
+    border-radius: var(--radius-sm);
+    margin-top: 1rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+.details-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+body.dark-mode .property-details-main h1,
+body.dark-mode .property-description h2,
+body.dark-mode .property-features h2,
+body.dark-mode .property-agent-card h2 {
+    color: var(--dark-text);
+}
+body.dark-mode .property-details-list {
+    border-color: var(--dark-border);
+}
+body.dark-mode .property-details-list span {
+    background-color: var(--dark-surface);
+    color: var(--dark-text);
+}
+body.dark-mode .property-description p:not(.details-label),
+body.dark-mode .property-agent-card > p:not(.details-label) {
+    color: var(--dark-muted-text);
+}
+body.dark-mode .features-grid span {
+    color: var(--dark-text);
+}
+body.dark-mode .property-agent-card {
+    background-color: var(--dark-surface);
+}
+@media (max-width: 900px) {
+    .property-details-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .property-agent-card {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .property-details-hero {
+        padding: 2rem 5% 0;
+    }
+    .property-details-image {
+        height: 20rem;
+    }
+    .property-details-section {
+        padding: 3rem 5% 4rem;
+    }
+    .property-details-main h1 {
+        font-size: 2.2rem;
+    }
+    .property-details-price {
+        font-size: 1.3rem;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
