@@ -46,6 +46,8 @@
     --login-button-padding: 0.75rem;
 
     --error-color: #c62828;
+    --dark-background: #111814;
+    --dark-nav-dropdown: #1B241F;
 }
 * {
     margin: 0;
@@ -611,6 +613,13 @@ body.dark-mode .about-highlight p {
 body.dark-mode .footer-links a,
 body.dark-mode .footer-contact p {
     color: var(--dark-text);
+}
+
+body.dark-mode .nav-links.active {
+background-color: var(--dark-nav-dropdown);
+}
+body.dark-mode .nav-links.active a {
+color: var(--dark-text);
 }
 
 @media (max-width: 768px) {
