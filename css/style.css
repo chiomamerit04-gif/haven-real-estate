@@ -552,6 +552,9 @@ footer {
     color: var(--light-green);
     font-size: 0.8rem;
 }
+.no-results {
+display: none;
+}
 body.dark-mode {
     background-color: var(--dark-background);
     color: var(--dark-text);
